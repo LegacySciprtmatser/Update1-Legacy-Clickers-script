@@ -1,6 +1,7 @@
 getgenv().autoTap = false;
 getgenv().autoRebirth = false;
 getgenv().buyEgg = false;
+getgenv().autocraft = false;
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
@@ -12,14 +13,18 @@ local F = library:CreateWindow("Egg hatching --BETA--")
 
 local H = library:CreateWindow("Auto Rebirth")
 
+local M = library:CreateWindow("Other")
+
 local A = w:CreateFolder("Auto Tap") -- Creates the folder(U will put here your buttons,etc)
 
 local b = F:CreateFolder("Egg hatching --BETA--")
 
 --local C = G:CreateFolder("Tp Coming soon")
 
-local D = H:CreateFolder("Auto Rebirth")
+local D = H:CreateFolder("Auto Rebirth 1 to 35M")
  
+local m = M:CreateFolder("Other") 
+
 A:DestroyGui()
 
 A:Toggle("Auto Tap",function(bool)
@@ -30,26 +35,35 @@ A:Toggle("Auto Tap",function(bool)
     end
 end)
 
+
+m:Toggle("Auto Craft all",function(bool)
+    getgenv().autocraft = bool
+    print("Auto Craftall is: ", bool)
+    if bool then
+        doautocraft();
+    end
+end)
+
 --REBIRTHS AUTO --
 
 D:Label(" WARNING DO NOT",{
     TextSize = 25; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    BgColor = Color3.fromRGB(226, 9, 9); -- Self Explaining
     
 }) 
 
 D:Label("ENABLE MORE",{
     TextSize = 25; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    BgColor = Color3.fromRGB(226, 9, 9); -- Self Explaining
     
 }) 
 
 D:Label("THEN 1",{
     TextSize = 25; -- Self Explaining
     TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    BgColor = Color3.fromRGB(226, 9, 9); -- Self Explaining
     
 }) 
 
@@ -393,66 +407,25 @@ b:Label("No Limited Eggs ",{
     
 }) 
 
-
---[[
- b:Label("Pretty Useless NGL",{
-    TextSize = 25; -- Self Explaining
- -  TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-    
-})
-
-b:Button("Button",function()
-    print("Elym Winning")
-end)
-
-
-b:Dropdown("Dropdown",{"A","B","C"},true,function(mob) --true/false, replaces the current title "Dropdown" with the option that t
-  print(mob)
-end)
-
-b:Bind("Bind",Enum.KeyCode.C,function() --Default bind
-    print("Yes")
-end)
-
-b:ColorPicker("ColorPicker",Color3.fromRGB(255,0,0),function(color) --Default color
-    print(color)
-end)
-
-b:Box("Box","number",function(value) -- "number" or "string"
-    print(value)
-end)
-
-
-
-
-How to refresh a dropdown:
-1)Create the dropdown and save it in a variable
-local yourvariable = b:Dropdown("Hi",yourtable,function(a)
-    print(a)
-end)
-2)Refresh it using the function
-yourvariable:Refresh(yourtable)
-How to refresh a label:
-1)Create your label and save it in a variable
-local yourvariable = b:Label("Pretty Useless NGL",{
-    TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255,255,255);
-    BgColor = Color3.fromRGB(69,69,69);
-})
-2)Refresh it using the function
-yourvariable:Refresh("Hello") It will only change the text ofc
-]]
-
 local remotePate = game:GetService("ReplicatedStorage").Shared.Knit.Services.remoteService.RE
-
-
 
 function doTap()
     spawn(function()
         while getgenv().autoTap == true do
         remotePate.clickRemote:FireServer()
        wait()
+        end
+     end)
+end
+
+function doautocraft()
+    spawn(function()
+        while getgenv().autocraft == true do
+local args = {
+    [1] = "CraftAll"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RE.petAction:FireServer(unpack(args))
+       wait(10)
         end
      end)
 end
@@ -652,7 +625,7 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
 
 --AUTO REBIRTH TO MAKE BUTTONS WORK --
 
-    function autoRebirth1()
+ function autoRebirth1()
         spawn(function()
             while getgenv().autoRebirth == true do
         local args = {
@@ -665,7 +638,7 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
         end)
         end
 
-        function autoRebirth15()
+function autoRebirth15()
             spawn(function()
                 while getgenv().autoRebirth == true do
             local args = {
@@ -678,7 +651,7 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
             end)
             end
 
-            function autoRebirth25()
+function autoRebirth25()
                 spawn(function()
                     while getgenv().autoRebirth == true do
                 local args = {
@@ -691,7 +664,7 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
                 end)
                 end
 
-                function autoRebirth50()
+function autoRebirth50()
                     spawn(function()
                         while getgenv().autoRebirth == true do
                     local args = {
@@ -821,7 +794,7 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
                                                 end)
                                                 end
 
-        function autoRebirth100k()
+  function autoRebirth100k()
             spawn(function()
                 while getgenv().autoRebirth == true do
             local args = {
@@ -832,9 +805,9 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
             wait(0)
                 end 
             end)
-            end
+end
 
-            function autoRebirth250k()
+ function autoRebirth250k()
                 spawn(function()
                     while getgenv().autoRebirth == true do
                 local args = {
@@ -845,7 +818,7 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
                 wait(0)
                     end 
                 end)
-                end
+ end
 
                 function autoRebirth500k()
                     spawn(function()
@@ -925,7 +898,7 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
                                         end)
                                         end
 
-                                        function autoRebirth15m()
+ function autoRebirth15m()
                                             spawn(function()
                                                 while getgenv().autoRebirth == true do
                                             local args = {
@@ -936,9 +909,9 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
                                             wait(0)
                                                 end 
                                             end)
-                                            end
+  end
 
-                                            function autoRebirth20m()
+function autoRebirth20m()
                                                 spawn(function()
                                                     while getgenv().autoRebirth == true do
                                                 local args = {
@@ -949,9 +922,9 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
                                                 wait(0)
                                                     end 
                                                 end)
-                                                end
+  end
 
-                                                function autoRebirth35m()
+  function autoRebirth35m()
                                                     spawn(function()
                                                         while getgenv().autoRebirth == true do
                                                     local args = {
@@ -962,4 +935,4 @@ teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.58
                                                     wait(0)
                                                         end 
                                                     end)
-                                                    end
+ end

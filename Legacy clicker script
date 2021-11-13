@@ -35,7 +35,6 @@ A:Toggle("Auto Tap",function(bool)
     end
 end)
 
-
 m:Toggle("Auto Craft all",function(bool)
     getgenv().autocraft = bool
     print("Auto Craftall is: ", bool)

@@ -1,0 +1,174 @@
+function buyEgg()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Common Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg1()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Rare Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg2()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Sand Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+--Candy world egg -- 
+
+function buyEgg3()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Gummy Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg4()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Sundae Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg5()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Cotton Candy Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+-- Oceanic kingdom -- 
+
+function buyEgg6()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Oceanic Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg7()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Deep Sea Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+-- Underworld--
+function buyEgg8()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Fiery Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg9()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Hellfire Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+--Mushroom
+function buyEgg10()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Mushroom Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg11()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Moonshroom Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg12()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = "Single", -- change this if you own Triple -- 
+    [2] = "Spore Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+--limited EGG -- 

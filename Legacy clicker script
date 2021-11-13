@@ -75,7 +75,7 @@ D:Toggle("Auto Rebirth  1",function(bool)
     end
 end)
 
-D:Toggle("Auto Rebirth 15",function(bool)
+D:Toggle("Auto Rebirth 10",function(bool)
     getgenv().autoRebirth = bool
     print("Auto rebirth is: ", bool)
     if bool then

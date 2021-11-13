@@ -1,0 +1,50 @@
+getgenv().autoTap = false;
+getgenv().autoRebirth = false;
+getgenv().buyEgg = false;
+getgenv().autocraft = false;
+
+local remotePate = game:GetService("ReplicatedStorage").Shared.Knit.Services.remoteService.RE
+
+function doTap()
+    spawn(function()
+        while getgenv().autoTap == true do
+        remotePate.clickRemote:FireServer()
+       wait()
+        end
+     end)
+end
+
+function doautocraft()
+    spawn(function()
+        while getgenv().autocraft == true do
+local args = {
+    [1] = "CraftAll"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RE.petAction:FireServer(unpack(args))
+       wait(10)
+        end
+     end)
+end
+
+
+--[[
+function getCurrentplayerPDS()
+    local plyr = game .Players.LocalPlayers;
+    if plyr.Character then
+        return plyr.Character.HumanoidRootPart.Position
+    end
+    return false;
+end
+
+function teleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayers;
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+    end
+end
+teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.5888443,)
+]]
+
+--AUTO REBIRTH TO MAKE BUTTONS WORK --
+
+ 

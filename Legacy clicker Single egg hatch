@@ -1,0 +1,940 @@
+getgenv().autoTap = false;
+getgenv().autoRebirth = false;
+getgenv().buyEgg = false;
+getgenv().autocraft = false;
+
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
+
+local w = library:CreateWindow("Auto Tap") -- Creates the window
+
+local F = library:CreateWindow("Egg hatching --BETA--")
+
+--local G = library:CreateWindow("Tp Coming soon")
+
+local H = library:CreateWindow("Auto Rebirth")
+
+local M = library:CreateWindow("Other")
+
+local A = w:CreateFolder("Auto Tap") -- Creates the folder(U will put here your buttons,etc)
+
+local b = F:CreateFolder("Egg hatching --BETA--")
+
+--local C = G:CreateFolder("Tp Coming soon")
+
+local D = H:CreateFolder("Auto Rebirth 1 to 35M")
+ 
+local m = M:CreateFolder("Other") 
+
+A:DestroyGui()
+
+A:Toggle("Auto Tap",function(bool)
+    getgenv().autoTap = bool
+    print("Auto Tap is: ", bool)
+    if bool then
+        doTap();
+    end
+end)
+
+
+m:Toggle("Auto Craft all",function(bool)
+    getgenv().autocraft = bool
+    print("Auto Craftall is: ", bool)
+    if bool then
+        doautocraft();
+    end
+end)
+
+--REBIRTHS AUTO --
+
+D:Label(" WARNING DO NOT",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(226, 9, 9); -- Self Explaining
+    
+}) 
+
+D:Label("ENABLE MORE",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(226, 9, 9); -- Self Explaining
+    
+}) 
+
+D:Label("THEN 1",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(226, 9, 9); -- Self Explaining
+    
+}) 
+
+D:Toggle("Auto Rebirth  1",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth1();
+    end
+end)
+
+D:Toggle("Auto Rebirth 10",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth15();
+    end
+end)
+
+D:Toggle("Auto Rebirth 25",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth25();
+    end
+end)
+
+D:Toggle("Auto Rebirth 50",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth50();
+    end
+end)
+
+D:Toggle("Auto Rebirth 100",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth100();
+    end
+end)
+
+D:Toggle("Auto Rebirth 250",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth250();
+    end
+end)
+
+D:Toggle("Auto Rebirth 500",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth500();
+    end
+end)
+
+D:Toggle("Auto Rebirth 1k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth1k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 2.5k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth2k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 5k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth5k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 10k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth10k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 25k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth25k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 50k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth50k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 100k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth100k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 250k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth250k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 500k",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth500k();
+    end
+end)
+
+D:Toggle("Auto Rebirth 1m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth1m();
+    end
+end)
+
+D:Toggle("Auto Rebirth 2.5m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth2m();
+    end
+end)
+
+D:Toggle("Auto Rebirth 5m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth5m();
+    end
+end)
+
+D:Toggle("Auto Rebirth 7.5m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth7m();
+    end
+end)
+
+D:Toggle("Auto Rebirth 10m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth10m();
+    end
+end)
+
+D:Toggle("Auto Rebirth 15m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth15m();
+    end
+end)
+
+D:Toggle("Auto Rebirth 20m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth20m();
+    end
+end)
+
+D:Toggle("Auto Rebirth 35m",function(bool)
+    getgenv().autoRebirth = bool
+    print("Auto rebirth is: ", bool)
+    if bool then
+        autoRebirth35m();
+    end
+end)
+
+--AUTO EGGS HATCHING --
+
+b:Label("Spawn World Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Common Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Common Egg is: ", bool)
+    if bool then
+        buyEgg();
+    end
+end)
+
+b:Toggle("Auto Rare Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Rare Egg is: ", bool)
+    if bool then
+        buyEgg1();
+    end
+end)
+
+b:Toggle("Auto Sand Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Sand Egg is: ", bool)
+    if bool then
+        buyEgg2();
+    end
+end)
+
+b:Label("Candy Land Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Gummy Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Gummy Egg is: ", bool)
+    if bool then
+        buyEgg3();
+    end
+end)
+
+b:Toggle("Auto Sundae Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Sundae Egg is: ", bool)
+    if bool then
+        buyEgg4();
+    end
+end)
+
+b:Toggle("Auto Cotton Candy Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Cotton Candy is: ", bool)
+    if bool then
+        buyEgg5();
+    end
+end)
+
+b:Label("Oceanic Kingdom Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Oceanic Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Oceanic is: ", bool)
+    if bool then
+        buyEgg6();
+    end
+end)
+
+b:Toggle("Auto Deep Sea Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Deep Sea is: ", bool)
+    if bool then
+        buyEgg7();
+    end
+end)
+
+b:Label("UnderWorld Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Fiery Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Fiery is: ", bool)
+    if bool then
+        buyEgg8();
+    end
+end)
+
+b:Toggle("Auto Hellfire Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Hellfire is: ", bool)
+    if bool then
+        buyEgg9();
+    end
+end)
+
+b:Label("Mushroom Forest Eggs",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+b:Toggle("Auto Mushroom Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Hellfire is: ", bool)
+    if bool then
+        buyEgg10();
+    end
+end)
+
+b:Toggle("Auto Moonshroom Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Hellfire is: ", bool)
+    if bool then
+        buyEgg11();
+    end
+end)
+
+b:Toggle("Auto Spore Egg",function(bool)
+    getgenv().buyEgg = bool
+    print("Auto Hellfire is: ", bool)
+    if bool then
+        buyEgg12();
+    end
+end)
+
+b:Label("No Limited Eggs ",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+}) 
+
+local remotePate = game:GetService("ReplicatedStorage").Shared.Knit.Services.remoteService.RE
+
+function doTap()
+    spawn(function()
+        while getgenv().autoTap == true do
+        remotePate.clickRemote:FireServer()
+       wait()
+        end
+     end)
+end
+
+function doautocraft()
+    spawn(function()
+        while getgenv().autocraft == true do
+local args = {
+    [1] = "CraftAll"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RE.petAction:FireServer(unpack(args))
+       wait(10)
+        end
+     end)
+end
+
+local trp = "Single"
+
+function buyEgg()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Common Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg1()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp,
+    [2] = "Rare Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg2()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] =trp, 
+    [2] = "Sand Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+--Candy world egg -- 
+
+function buyEgg3()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp,
+    [2] = "Gummy Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg4()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Sundae Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg5()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Cotton Candy Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+-- Oceanic kingdom -- 
+
+function buyEgg6()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Oceanic Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg7()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Deep Sea Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+-- Underworld--
+function buyEgg8()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp,
+    [2] = "Fiery Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg9()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Hellfire Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+--Mushroom
+function buyEgg10()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp,
+    [2] = "Mushroom Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg11()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Moonshroom Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+function buyEgg12()
+    spawn(function()
+        while getgenv().buyEgg == true do
+local args = {
+    [1] = trp, 
+    [2] = "Spore Egg"
+}
+game:GetService("ReplicatedStorage").Shared.Knit.Services.petService.RF.hatchEgg:InvokeServer(unpack(args))
+            wait()
+        end
+    end)    
+end
+
+--limited EGG -- 
+
+--[[
+function getCurrentplayerPDS()
+    local plyr = game .Players.LocalPlayers;
+    if plyr.Character then
+        return plyr.Character.HumanoidRootPart.Position
+    end
+    return false;
+end
+
+function teleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayers;
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = placeCFrame
+    end
+end
+teleportTO(game:GetService("Worspace")._Worlds.Mushroom Forest.211.227295, 48.5888443,)
+]]
+
+--AUTO REBIRTH TO MAKE BUTTONS WORK --
+
+ function autoRebirth1()
+        spawn(function()
+            while getgenv().autoRebirth == true do
+        local args = {
+            [1] = "Rebirth",
+            [2] = "1 Rebirth"
+        }
+        remotePate.rebirthRemote:FireServer(unpack(args))
+        wait(0)
+            end 
+        end)
+        end
+
+function autoRebirth15()
+            spawn(function()
+                while getgenv().autoRebirth == true do
+            local args = {
+                [1] = "Rebirth",
+                [2] = "10 Rebirths"
+            }
+            remotePate.rebirthRemote:FireServer(unpack(args))
+            wait(0)
+                end 
+            end)
+            end
+
+function autoRebirth25()
+                spawn(function()
+                    while getgenv().autoRebirth == true do
+                local args = {
+                    [1] = "Rebirth",
+                    [2] = "25 Rebirths"
+                }
+                remotePate.rebirthRemote:FireServer(unpack(args))
+                wait(0)
+                    end 
+                end)
+                end
+
+function autoRebirth50()
+                    spawn(function()
+                        while getgenv().autoRebirth == true do
+                    local args = {
+                        [1] = "Rebirth",
+                        [2] = "50 Rebirths"
+                    }
+                    remotePate.rebirthRemote:FireServer(unpack(args))
+                    wait(0)
+                        end 
+                    end)
+                    end
+
+                    function autoRebirth100()
+                        spawn(function()
+                            while getgenv().autoRebirth == true do
+                        local args = {
+                            [1] = "Rebirth",
+                            [2] = "100 Rebirths"
+                        }
+                        remotePate.rebirthRemote:FireServer(unpack(args))
+                        wait(0)
+                            end 
+                        end)
+                        end
+
+                        function autoRebirth250()
+                            spawn(function()
+                                while getgenv().autoRebirth == true do
+                            local args = {
+                                [1] = "Rebirth",
+                                [2] = "250 Rebirths"
+                            }
+                            remotePate.rebirthRemote:FireServer(unpack(args))
+                            wait(0)
+                                end 
+                            end)
+                            end
+                           
+                            function autoRebirth500()
+                                spawn(function()
+                                    while getgenv().autoRebirth == true do
+                                local args = {
+                                    [1] = "Rebirth",
+                                    [2] = "500 Rebirths"
+                                }
+                                remotePate.rebirthRemote:FireServer(unpack(args))
+                                wait(0)
+                                    end 
+                                end)
+                            end 
+                            
+                            function autoRebirth1k()
+                                spawn(function()
+                                    while getgenv().autoRebirth == true do
+                                local args = {
+                                    [1] = "Rebirth",
+                                    [2] = "1k Rebirths"
+                                }
+                                remotePate.rebirthRemote:FireServer(unpack(args))
+                                wait(0)
+                                    end 
+                                end)
+                                end
+
+                                function autoRebirth2k()
+                                    spawn(function()
+                                        while getgenv().autoRebirth == true do
+                                    local args = {
+                                        [1] = "Rebirth",
+                                        [2] = "2.5k Rebirths"
+                                    }
+                                    remotePate.rebirthRemote:FireServer(unpack(args))
+                                    wait(0)
+                                        end 
+                                    end)
+                                end
+
+                                function autoRebirth5k()
+                                    spawn(function()
+                                        while getgenv().autoRebirth == true do
+                                    local args = {
+                                        [1] = "Rebirth",
+                                        [2] = "5k Rebirths"
+                                    }
+                                    remotePate.rebirthRemote:FireServer(unpack(args))
+                                    wait(0)
+                                        end 
+                                    end)
+                                    end
+
+                                    function autoRebirth10k()
+                                        spawn(function()
+                                            while getgenv().autoRebirth == true do
+                                        local args = {
+                                            [1] = "Rebirth",
+                                            [2] = "10k Rebirths"
+                                        }
+                                        remotePate.rebirthRemote:FireServer(unpack(args))
+                                        wait(0)
+                                            end 
+                                        end)
+                                        end
+
+                                        function autoRebirth25k()
+                                            spawn(function()
+                                                while getgenv().autoRebirth == true do
+                                            local args = {
+                                                [1] = "Rebirth",
+                                                [2] = "25k Rebirths"
+                                            }
+                                            remotePate.rebirthRemote:FireServer(unpack(args))
+                                            wait(0)
+                                                end 
+                                            end)
+                                            end
+
+                                            function autoRebirth50k()
+                                                spawn(function()
+                                                    while getgenv().autoRebirth == true do
+                                                local args = {
+                                                    [1] = "Rebirth",
+                                                    [2] = "50k Rebirths"
+                                                }
+                                                remotePate.rebirthRemote:FireServer(unpack(args))
+                                                wait(0)
+                                                    end 
+                                                end)
+                                                end
+
+  function autoRebirth100k()
+            spawn(function()
+                while getgenv().autoRebirth == true do
+            local args = {
+                [1] = "Rebirth",
+                [2] = "100k Rebirths"
+            }
+            remotePate.rebirthRemote:FireServer(unpack(args))
+            wait(0)
+                end 
+            end)
+end
+
+ function autoRebirth250k()
+                spawn(function()
+                    while getgenv().autoRebirth == true do
+                local args = {
+                    [1] = "Rebirth",
+                    [2] = "250k Rebirths"
+                }
+                remotePate.rebirthRemote:FireServer(unpack(args))
+                wait(0)
+                    end 
+                end)
+ end
+
+                function autoRebirth500k()
+                    spawn(function()
+                        while getgenv().autoRebirth == true do
+                    local args = {
+                        [1] = "Rebirth",
+                        [2] = "500k Rebirths"
+                    }
+                    remotePate.rebirthRemote:FireServer(unpack(args))
+                    wait(0)
+                        end 
+                    end)
+                    end
+
+                    function autoRebirth1m()
+                        spawn(function()
+                            while getgenv().autoRebirth == true do
+                        local args = {
+                            [1] = "Rebirth",
+                            [2] = "1M Rebirths"
+                        }
+                        remotePate.rebirthRemote:FireServer(unpack(args))
+                        wait(0)
+                            end 
+                        end)
+                        end
+
+                        function autoRebirth2m()
+                            spawn(function()
+                                while getgenv().autoRebirth == true do
+                            local args = {
+                                [1] = "Rebirth",
+                                [2] = "2.5M Rebirths"
+                            }
+                            remotePate.rebirthRemote:FireServer(unpack(args))
+                            wait(0)
+                                end 
+                            end)
+                            end
+
+                            function autoRebirth5m()
+                                spawn(function()
+                                    while getgenv().autoRebirth == true do
+                                local args = {
+                                    [1] = "Rebirth",
+                                    [2] = "5M Rebirths"
+                                }
+                                remotePate.rebirthRemote:FireServer(unpack(args))
+                                wait(0)
+                                    end 
+                                end)
+                                end
+
+                                function autoRebirth7m()
+                                    spawn(function()
+                                        while getgenv().autoRebirth == true do
+                                    local args = {
+                                        [1] = "Rebirth",
+                                        [2] = "7.5M Rebirths"
+                                    }
+                                    remotePate.rebirthRemote:FireServer(unpack(args))
+                                    wait(0)
+                                        end 
+                                    end)
+                                    end
+
+                                    function autoRebirth10m()
+                                        spawn(function()
+                                            while getgenv().autoRebirth == true do
+                                        local args = {
+                                            [1] = "Rebirth",
+                                            [2] = "10M Rebirths"
+                                        }
+                                        remotePate.rebirthRemote:FireServer(unpack(args))
+                                        wait(0)
+                                            end 
+                                        end)
+                                        end
+
+ function autoRebirth15m()
+                                            spawn(function()
+                                                while getgenv().autoRebirth == true do
+                                            local args = {
+                                                [1] = "Rebirth",
+                                                [2] = "15M Rebirths"
+                                            }
+                                            remotePate.rebirthRemote:FireServer(unpack(args))
+                                            wait(0)
+                                                end 
+                                            end)
+  end
+
+function autoRebirth20m()
+                                                spawn(function()
+                                                    while getgenv().autoRebirth == true do
+                                                local args = {
+                                                    [1] = "Rebirth",
+                                                    [2] = "20M Rebirths"
+                                                }
+                                                remotePate.rebirthRemote:FireServer(unpack(args))
+                                                wait(0)
+                                                    end 
+                                                end)
+  end
+
+  function autoRebirth35m()
+                                                    spawn(function()
+                                                        while getgenv().autoRebirth == true do
+                                                    local args = {
+                                                        [1] = "Rebirth",
+                                                        [2] = "35M Rebirths"
+                                                    }
+                                                    remotePate.rebirthRemote:FireServer(unpack(args))
+                                                    wait(0)
+                                                        end 
+                                                    end)
+ end
